@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index1.js" defer></script>
+    <script src="particles.js" defer></script>
+    <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="index1.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="main-container">
+      <div class="left-column">
+        <div class="weather">
+          <h2>Погода</h2>
+          <p>Город: <span id="city-name">Almaty Kazakhstan</span></p>
+          <p>Температура: <span id="temperature">Загрузка...</span>°C</p>
+          <p>Описание: <span id="condition">Загрузка...</span></p>
+        </div>
+
+        <div class="games">
+          <h2>Последние игры</h2>
+          <button id="loadGamesBtn">Загрузить игры</button>
+          <ul id="gameList"></ul>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="container">
+          <h1>Список дел</h1>
+
+          <div class="input-container">
+            <input
+              type="text"
+              id="task-input"
+              placeholder="Добавить новую задачу..."
+            />
+            <button id="add-btn">Добавить</button>
+          </div>
+
+          <ul id="task-list"></ul>
+
+          <div class="counter">
+            <span id="counter">Всего: 0 | Выполнено: 0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

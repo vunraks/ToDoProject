@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(90deg, #6517e3, hsl(0, 0%, 50%), #6517e3);
+  color: white;
+  position: relative;
+  min-height: 100vh;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.right-column {
+  flex: 2;
+  min-width: 300px;
+}
+
+.weather,
+.games,
+.container {
+  background: rgba(8, 156, 38, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+h1,
+h2 {
+  color: white;
+  margin-top: 0;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#add-btn,
+#loadGamesBtn {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#loadGamesBtn {
+  border-radius: 100px;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 3px solid rgba(53, 52, 51, 0.459);
+}
+
+.task.completed .task-text {
+  text-decoration: line-through;
+  color: #000000;
+}
+
+.checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.task-text {
+  flex: 1;
+  color: white;
+}
+
+.delete-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.counter {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.game-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+
+
+
+/* .music {
+  background: rgba(30, 215, 96, 0.7); /* Spotify green */
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #1DB954;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.track {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.track-number {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.track-info {
+  flex: 1;
+}
+
+#loadMusicBtn {
+  background: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+} */
